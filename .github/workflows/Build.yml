@@ -17,9 +17,7 @@ jobs:
 
     - name: Set up plugin sdk
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: |
-        git clone https://github.com/DK22Pac/plugin-sdk.git
-        mkdir "G:\GTA San Andreas Remaster\modloader\_ESSENTIALS\FramerateVigilante"
+      run: git clone https://github.com/DK22Pac/plugin-sdk.git
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
