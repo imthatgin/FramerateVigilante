@@ -6,7 +6,7 @@ on:
 env:
   SOLUTION_FILE_PATH: FramerateVigilante.sln 
   BUILD_CONFIGURATION: Release 
-  BUILD_PLATFORM: x86
+  BUILD_PLATFORM: Win32
 
 jobs:
   build:
