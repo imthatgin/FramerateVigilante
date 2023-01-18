@@ -6,7 +6,7 @@ on:
 env:
   SOLUTION_FILE_PATH: FramerateVigilante.sln 
   BUILD_CONFIGURATION: zDebug 
-  BUILD_PLATFORM: Win32
+  BUILD_PLATFORM: x86
 
 jobs:
   build:
