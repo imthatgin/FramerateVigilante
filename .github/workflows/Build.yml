@@ -2,6 +2,7 @@ name: Build
 
 on:
   push
+
 env:
   SOLUTION_FILE_PATH: FramerateVigilante.sln 
   BUILD_CONFIGURATION: Release
@@ -22,4 +23,4 @@ jobs:
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
+      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Platform=Win32 ${{env.SOLUTION_FILE_PATH}}
