@@ -5,15 +5,19 @@ on:
 
 env:
   SOLUTION_FILE_PATH: FramerateVigilante.sln 
-  BUILD_CONFIGURATION: "GTASA Release"
-  BUILD_PLATFORM: "Win32"
+  BUILD_CONFIGURATION: GTASA Release
+  BUILD_PLATFORM: Win32
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2019
 
     steps:
     - uses: actions/checkout@v3
+
+    - name: Set up plugin sdk
+      working-directory: ${{env.GITHUB_WORKSPACE}}
+      run: git clone https://github.com/DK22Pac/plugin-sdk.git
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
@@ -24,4 +28,4 @@ jobs:
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Platform=${{env.BUILD_PLATFORM}} ${{env.SOLUTION_FILE_PATH}}
+      run: msbuild /m /p:Configuration="${{env.BUILD_CONFIGURATION}}" /p:Platform="${{env.BUILD_PLATFORM}}" ${{env.SOLUTION_FILE_PATH}}
