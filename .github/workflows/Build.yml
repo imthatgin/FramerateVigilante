@@ -5,7 +5,8 @@ on:
 
 env:
   SOLUTION_FILE_PATH: FramerateVigilante.sln 
-  BUILD_CONFIGURATION: Release
+  BUILD_CONFIGURATION: zDebug 
+  BUILD_PLATFORM: x86
 
 jobs:
   build:
@@ -23,4 +24,4 @@ jobs:
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Platform=Win32 ${{env.SOLUTION_FILE_PATH}}
+      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Platform=${{env.BUILD_PLATFORM}} ${{env.SOLUTION_FILE_PATH}}
