@@ -5,8 +5,8 @@ on:
 
 env:
   SOLUTION_FILE_PATH: FramerateVigilante.sln 
-  BUILD_CONFIGURATION: GTASA Release 
-  BUILD_PLATFORM: Win32
+  BUILD_CONFIGURATION: "GTASA Release"
+  BUILD_PLATFORM: "Win32"
 
 jobs:
   build:
