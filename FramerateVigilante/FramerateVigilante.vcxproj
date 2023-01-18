@@ -96,13 +96,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTASA Release|Win32'">
-    <OutDir>G:\GTA San Andreas Remaster\modloader\_ESSENTIALS\FramerateVigilante</OutDir>
+    <OutDir>D:\a\FramerateVigilante\FramerateVigilante\FramerateVigilante\</OutDir>
     <IntDir>$(ProjectDir).obj\GTASA\Release\</IntDir>
     <TargetName>FramerateVigilante.SA</TargetName>
     <TargetExt>.asi</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GTASA zDebug|Win32'">
-    <OutDir>G:\GTA San Andreas Remaster\modloader\_ESSENTIALS\FramerateVigilante</OutDir>
+    <OutDir>D:\a\FramerateVigilante\FramerateVigilante\FramerateVigilante\</OutDir>
     <IntDir>$(ProjectDir).obj\GTASA\Debug\</IntDir>
     <TargetName>FramerateVigilante.SA</TargetName>
     <TargetExt>.asi</TargetExt>
