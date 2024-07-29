@@ -22,10 +22,10 @@ jobs:
     - name: Setup Windows 10 SDK Action
       uses: GuillaumeFalourd/setup-windows10-sdk-action@v2
       with:
-        sdk-version: 22621
+        sdk-version: 18362
 
     - name: Add MSBuild to PATH
-      uses: microsoft/setup-msbuild@v1.0.2
+      uses: microsoft/setup-msbuild@v2
 
     - name: Restore NuGet packages
       working-directory: ${{env.GITHUB_WORKSPACE}}
