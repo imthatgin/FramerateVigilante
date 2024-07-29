@@ -306,7 +306,7 @@ public:
 
 				#if defined(GTASA)
 					// Bonus: fix second player unable to toggle siren
-					pad = vehicle->m_pDriver == CWorld::Players[0].m_pPed ? CPad::GetPad(0) : CPad::GetPad(1);
+					pad = vehicle->m_pDriver == FindPlayerPed() ? CPad::GetPad(0) : CPad::GetPad(1);
 				#else
 					pad = CPad::GetPad(0);
 				#endif
