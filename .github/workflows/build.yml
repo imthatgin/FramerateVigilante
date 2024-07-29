@@ -20,7 +20,7 @@ jobs:
       run: git clone https://github.com/DK22Pac/plugin-sdk.git
 
     - name: Setup Windows 10 SDK Action
-      uses: GuillaumeFalourd/setup-windows10-sdk-action@v1.11
+      uses: GuillaumeFalourd/setup-windows10-sdk-action@v2
       with:
         sdk-version: 22621
 
