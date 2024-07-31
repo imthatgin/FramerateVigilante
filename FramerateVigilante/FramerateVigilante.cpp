@@ -363,13 +363,13 @@ public:
 				}
 			};
 		#if defined(GTASA)
-			MakeInline<SirenTurnOnFix>(0x006E0961);
+			//MakeInline<SirenTurnOnFix>(0x006E0961);
 		#endif
 		#if defined(GTAVC)
-			MakeInline<SirenTurnOnFix>(0x00597A58);
+			//MakeInline<SirenTurnOnFix>(0x00597A58);
 		#endif
 		#if defined(GTA3)
-			MakeInline<SirenTurnOnFix>(0x00534092);
+			//MakeInline<SirenTurnOnFix>(0x00534092);
 		#endif
 
 
